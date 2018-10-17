@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+}

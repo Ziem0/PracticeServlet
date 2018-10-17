@@ -1,0 +1,9 @@
+{% macro inputs(name) %}
+    <label for="{{ name }}">{{ name }}</label>
+    <input id="{{ name }}" name="{{ name }}" type="text" placeholder="enter your {{ name }}" autofocus>
+{% endmacro %}
+
+{% macro birthdate(name) %}
+    <label for="{{ name }}">{{ name }}</label>
+    <input id="{{ name }}" name="{{ name }}" type="date" placeholder="enter your {{ name }}" autofocus>
+{% endmacro %}

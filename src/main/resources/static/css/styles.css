@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Righteous');
+
+* {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+nav, footer{
+    background: #8fbc8f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main, .result, .inputer, .inputer form {
+    background: #f0e68c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main a, .result button {
+    color: white;
+    background: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main a:hover {
+    transition: all 0.5s ease-in-out;
+    background: #808080;
+}
+
+.result button:hover {
+    transition: all 0.5s ease-in-out;
+    background: #808080;
+}
+
+.inputer form {
+    border: 2px solid #808080;
+    padding: 20px;
+}
+
+.result h1 {
+    font-family: 'Righteous', cursive;
+}
+

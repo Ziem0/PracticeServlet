@@ -1,0 +1,36 @@
+{% extends "template.twig" %}
+{% import "macros.twig" as inp %}
+
+{% set types = ["name", "last"] %}
+{% set date = "birthday" %}
+
+
+{% block container %}
+
+    <div class="inputer">
+
+        <h2>Lets start!</h2>
+
+        <h3>Add values by POST method</h3>
+
+        <form method="post">
+                {% for type in types %}
+                    {{ inp.inputs(type) }}
+                {% endfor %}
+                {{ inp.birthdate(date) }}
+                <input type="submit" value="CALCULATE">
+        </form>
+
+        <h3>Add values by GET method</h3>
+
+        <form method="get">
+                {% for type in types %}
+                    {{ inp.inputs(type) }}
+                {% endfor %}
+                {{ inp.birthdate(date) }}
+                <input type="submit" value="CALCULATE">
+        </form>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "template.twig" %}
+
+{% block container %}
+
+    <div class="result">
+
+        <h3>Your result:</h3>
+        <h1>{{ value }}</h1>
+        <img src="/static/images/{{ guitarist }}" alt="You're a badass..">
+        <button onclick="window.open('/home', '_parent')">HOME</button>
+
+    </div>
+
+{% endblock %}
